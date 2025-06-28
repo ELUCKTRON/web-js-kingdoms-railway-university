@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Railways Game Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="game-header"></header>
+
+    <!-- Main Menu Content -->
+    <div class="menu-container">
+      <!-- Title -->
+      <h1 class="game-title">RAILWAYS</h1>
+
+      <!-- Username Input -->
+      <input type="text" id="inputText" class="username-input" placeholder="WHO ARE YOU?"/>
+
+      <!-- Difficulty Section -->
+      <div class="difficulty-section" id="difficulty-section">
+        <h2 class="difficulty-title">SET THE DIFFICULTY!</h2>
+        <div class="difficulty-buttons">
+          <button class="difficulty-btn" id="easy" >
+            5 X 5
+          </button>
+          <button class="difficulty-btn" id="hard" >
+            7 X 7
+          </button>
+        </div>
+        <div class="difficulty-labels">
+          <span class="easy-label">EASY</span>
+          <span class="hard-label">HARD</span>
+        </div>
+      </div>
+
+      <!-- Buttons Section -->
+      <div class="buttons-container">
+        <button class="rules-btn" id="rulesButton">RULES</button>
+        <button class="start-btn" id="startButton">START GAME</button>
+      </div>
+      <!-- Read-Only Hidden Rules Text Area -->
+      <textarea class="rule-area" id="rulesTextArea" readonly="" hidden="" placeholder="rules"></textarea>
+    </div>
+
+
+    <!-- Hidden Game Screen Div (Initially Hidden) -->
+    <div id="game-screen" class="hidden-game">
+      <!-- Title -->
+      <h1 class="game-title">RAILWAYS</h1>
+
+      <div class="info-and-tables">
+           <!-- side table left Section -->
+
+            <div class="sideTable" id="self-leaderboard">
+
+            </div>
+
+
+              <!-- Info Section -->
+      <div class="game-info">
+        <h2>MAP NUMBER:</h2>
+        <h3 class="map-number" id="map-number">0</h3>
+        <h2>MAP DIFFICULTY:</h2>
+        <h3 class="map-difficulty" id="map-difficulty">SOMETHING</h3>
+        <h2>ROUTE DESIGNER:</h2>
+        <h3 class="player-name" id="player-name">TRICKLES</h3>
+        <h2>ELAPSED TIME:</h2>
+        <h3 class="elapsed-time" id="elapsed-time">10:25</h3>
+        <h2>BEST TIME:</h2>
+        <h3 class="best-time" id="best-time">9:25</h3>
+        <h2>STATUS :</h2>
+        <h3 class="status" id="status">Waiting</h3>
+        <div class="map-buttons">
+          <button class="random-map-button" id="random-map-button">random</button>
+          <button class="refresh-map-button" id="refresh-map-button">refresh</button>
+          <button class="exit-map-button" id="exit-map-button">exit</button>
+        </div>
+
+      </div>
+
+       <!-- side table right Section -->
+
+      <div class="sideTable" id="global-leaderboard">
+
+      </div>
+
+
+
+
+      </div>
+
+
+      <!-- Game Board (table) -->
+      <div class="game-board" id="game-board">
+        <table class="styled-table" id="game-table">
+          <td><tr</td></td>
+        </table>
+      </div>
+
+
+    <!-- Footer -->
+    <footer class="game-footer"></footer>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
+

@@ -1,0 +1,297 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #f3f3e7;
+}
+
+/* Header */
+.game-header {
+  width: 100%;
+  height: 150px;
+  background-image: url('pics/screens/thumbnail.png'); /* Replace with your actual header image URL */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.game-footer {
+  width: 100%;
+  height: 150px;
+  background-image: url('pics/screens/thumbnail.png'); /* Replace with your actual footer image URL */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Menu Container */
+.menu-container {
+  text-align: center;
+  padding: 20px;
+  flex: 1; /* Pushes the menu content between header and footer */
+}
+
+/* Title (RAILWAYS) Styling */
+.game-title {
+  font-size: 72px;
+  font-weight: bold;
+  color: #cfb072;
+  text-shadow: 2px 2px 0px #8f7640;
+  margin-bottom: 30px;
+}
+
+/* Username Input Field */
+.username-input {
+  width: 400px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid #cfb072;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  color: #cfb072;
+  outline: none;
+  background-color: #fffdfa;
+}
+
+/* Difficulty Section */
+.difficulty-section {
+  margin-bottom: 40px;
+}
+
+.difficulty-title {
+  font-size: 24px;
+  color: #9b9b83;
+  margin-bottom: 15px;
+}
+
+/* Difficulty Buttons */
+.difficulty-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.difficulty-btn {
+  width: 100px;
+  height: 60px;
+  font-size: 24px;
+  border: 2px solid #9b9b83;
+  border-radius: 10px;
+  background-color: #e9eddb;
+  color: #9b9b83;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.difficulty-btn:hover {
+  background-color: #d7dbc8;
+}
+
+/* Difficulty Labels */
+.difficulty-labels {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  color: #b2b295;
+  font-size: 16px;
+}
+
+.easy-label {
+  font-weight: bold;
+  margin-right: 60px;
+}
+
+.hard-label {
+  font-weight: bold;
+  margin-left: 60px;
+}
+
+/* Rules and Start Buttons */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.rules-btn, .start-btn {
+  width: 150px;
+  height: 60px;
+  font-size: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+.rules-btn {
+  background-color: #bccbb4;
+}
+
+.start-btn {
+  background-color: #a0a0a0;
+}
+
+.rules-btn:hover {
+  opacity: 0.9;
+}
+
+.start-btn:hover {
+  opacity: 0.9;
+}
+
+/* Rule Text Area */
+.rule-area {
+  width: 80%;
+  max-width: 600px;
+  height: 200px;
+  font-size: 18px;
+  color: #cfb072;
+  background-color: #fffdfa;
+  border: 2px solid #cfb072;
+  border-radius: 10px;
+  padding: 15px;
+  resize: none;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+
+
+}
+
+
+
+
+/* Hidden Game Screen (Initially Hidden) */
+.hidden-game {
+  display: none;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Game Board  */
+.game-board {
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #cfb072;
+  width: 400px;
+  height: 404px;
+}
+
+.info-and-tables {
+  justify-content: center;
+  display:flex;
+  flex-direction: row;
+
+}
+
+.game-info h3 {
+  color: rgb(190, 148, 23) ;
+}
+
+.map-buttons{
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+
+
+}
+
+.random-map-button {
+  width: 75px;
+  height: 35px;
+  background-color: rgb(228, 204, 95);
+  color: rgb(69, 36, 11);
+  border-radius: 1px solid rgb(69, 36, 11);
+}
+
+.refresh-map-button {
+  width: 75px;
+  height: 35px;
+  background-color: rgb(228, 204, 95);
+  color: rgb(69, 36, 11);
+  border-radius: 1px solid rgb(69, 36, 11);
+}
+
+.exit-map-button {
+  width: 75px;
+  height: 35px;
+  background-color: rgb(228, 204, 95);
+  color: rgb(69, 36, 11);
+  border-radius: 1px solid rgb(69, 36, 11);
+}
+
+.sideTable {
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #cfb072;
+  width: 350px;
+  height: 280px;
+
+}
+
+.sideTable tr, .sideTable td ,.sideTable th {
+  border: 1px solid black;
+}
+
+
+
+
+.styled-table {
+  border-spacing: 0px; /* Space between cells */
+}
+.styled-cell {
+  padding: 0px; /* Space inside each cell */
+  width: auto;
+  height: auto;
+}
+
+
+.lake {
+  background-image: url('pics/tiles/Lake.png');
+  background-size: cover;
+}
+
+
+.mountain {
+  background-image: url('pics/tiles/mountain.png');
+  background-size: cover;
+}
+.mountain_railed {
+  background-image: url('pics/tiles/mountain_railed.png');
+  background-size: cover;
+}
+
+.bridge {
+  background-image: url('pics/tiles/bridge.png');
+  background-size: cover;
+}
+.bridge_railed {
+  background-image: url('pics/tiles/bridge_railed.png');
+  background-size: cover;
+}
+
+.empty {
+  background-image: url('pics/tiles/empty.png');
+  background-size: cover;
+}
+.empty_railed {
+  background-image: url('pics/tiles/empty_railed.png');
+  background-size: cover;
+}
+.empty_curve_railed{
+  background-image: url('pics/tiles/empty_curve_railed.png');
+  background-size: cover;
+
+}
+
