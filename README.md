@@ -5,6 +5,32 @@ Built using **vanilla JavaScript**, **HTML**, and **CSS**, this game challenges 
 
 ---
 
+## 📸 Screenshots
+
+### 🧩 Gameplay States
+
+- Start - Easy Mode  
+  ![Easy Start](./assets/easy-start.jpeg)
+
+- Victory - Easy Mode  
+  ![Easy Win](./assets/easy-win.jpeg)
+
+- Victory - Hard Mode  
+  ![Hard Win](./assets/hard-win.jpeg)
+
+- Game Lost  
+  ![Lose Screen](./assets/lose.jpeg)
+
+### 🧭 UI & Navigation
+
+- Landing Page  
+  ![Landing](./assets/landing.jpeg)
+
+- Landing with Rules  
+  ![Landing Rules](./assets/landing-with-rules.jpeg)
+
+---
+
 ## 🎯 Objective
 
 Design a railway network that satisfies strict placement rules and connectivity conditions. Each game map is randomly generated depending on the chosen difficulty. The player must build a continuous, valid path before time runs out.
@@ -43,3 +69,12 @@ Design a railway network that satisfies strict placement rules and connectivity 
 
 - **Persistent Leaderboard** using browser `localStorage`.
 - **Mouse Path Drawing** for intuitive element placement.
+
+---
+
+## 📚 University Info
+
+🎓 Student: Saeed Khanloo  
+🧠 Course: Web Programming  
+🗓️ Semester: 3  
+🪪 License: MIT
