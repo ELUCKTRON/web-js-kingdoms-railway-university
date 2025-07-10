@@ -7,6 +7,14 @@ Built using **vanilla JavaScript**, **HTML**, and **CSS**, this game challenges 
 
 ## 📸 Screenshots
 
+### 🧭 UI & Navigation
+
+- Landing Page  
+  ![Landing](./assets/landing.jpeg)
+
+- Landing with Rules  
+  ![Landing Rules](./assets/landing-with-rules.jpeg)
+
 ### 🧩 Gameplay States
 
 - Start - Easy Mode  
@@ -21,13 +29,7 @@ Built using **vanilla JavaScript**, **HTML**, and **CSS**, this game challenges 
 - Game Lost  
   ![Lose Screen](./assets/lose.jpeg)
 
-### 🧭 UI & Navigation
 
-- Landing Page  
-  ![Landing](./assets/landing.jpeg)
-
-- Landing with Rules  
-  ![Landing Rules](./assets/landing-with-rules.jpeg)
 
 ---
 
